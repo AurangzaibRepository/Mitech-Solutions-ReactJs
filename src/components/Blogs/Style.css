@@ -1,0 +1,24 @@
+.dv-blog {
+    min-height: 480px;
+    padding: 0px 10px;
+}
+
+.dv-blog img {
+    height: 300px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.dv-blog .title {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.dv-blog .description {
+    font-size: 19px;
+}
+
+#btn-read-more {
+    padding: 6px 14px;
+}

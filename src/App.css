@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+#root {
+  height: 100%;
+}
+
+.dv-main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  padding: 30px 35px;
+}
+
+.img-banner, .dv-banner {
+  height: 400px;
+  width: 100%;
+}
+
+.dv-banner {
+  position: relative;
+}
+
+.label-banner {
+  bottom: 65px;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  left: 44%;
+  position: absolute;
+}
+
+#img-history {
+  width: 100%;
+}
+
+#img-customer-logos {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.page-header {
+  color: #333;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.page-contents {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+section {
+  margin-top: 70px;
+}
+
+#section-statistics .spn-number {
+  color: #3b5998;
+  font-size: 95px;
+}
+
+#section-statistics .label-stats {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: -12px;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 6px 24px;
+}
+
+.btn-primary {
+  background: #3b5998;
+  border-color: #3b5998;
+}
+
+.header {
+  color: #3b5998;
+  font-size: 42px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.bg-color-primary {
+  background-color: #3b5998;
+}
+
+.bg-color-gray {
+  background-color: #f4f4f4;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.pre-line {
+  white-space: pre-line;
+}
+
+.spn-error {
+  color: red;
+  font-weight: 600;
+}
+
+.dv-carousel {
+  height: 600px;
+}
+
+ul {
+  font-size: 18px;
+  line-height: 37px;
+  list-style: disclosure-closed;
+}
+
+ul li {
+  padding-left: 8px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.carousel-root, .carousel-slider {
+  height: 100%;
+}
+
+.carousel .slide,
+.carousel .slide img {
+  height: 600px;
+}

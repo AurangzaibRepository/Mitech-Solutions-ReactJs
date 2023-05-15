@@ -1,0 +1,60 @@
+{
+    "contact_information": {
+        "address": "MITECH SOLUTIONS\nNo 7, Jalan HP 1/8, Hill Park\n43500, Semenyih, Selangor.",
+        "contact_number": "+60122163731"
+    },
+    "core_services": [
+        {
+            "id": 1,
+            "property": "Refurbished Desktops"
+        },
+        {
+           "id": 2,
+           "property": "Refurbished Laptops"
+        },
+        {
+            "id": 3,
+            "property": "Refurbished  Accessories"
+        },
+        {
+            "id": 4,
+            "property": "Refurbished Servers and Storage"
+        }
+    ],
+    "professional_services": [
+        {
+            "id": 1,
+            "property": "Website Development"
+        },
+        {
+            "id": 2,
+            "property": "Software Development"
+        },
+        {
+            "id": 3,
+            "property": "Mobile Apps Development"
+        },
+        {
+            "id": 4,
+            "property": "SEO"
+        }
+    ],
+    "softwares": [
+        {
+            "id": 1,
+            "property": "Customized Software"
+        },
+        {
+            "id": 2,
+            "property": "Visitor Management System"
+        },
+        {
+            "id": 3,
+            "property": "RO Listing app"
+        },
+        {
+            "id": 4,
+            "property": "Sales & Marketing Software"
+        }
+    ]
+}

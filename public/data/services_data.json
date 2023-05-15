@@ -1,0 +1,96 @@
+{
+    "refurbished_laptops": {
+        "title": "Largest Refurbished Desktops at our Warehouse",
+        "caption": "Purchase refurbished desktop at best quality with cheap price.",
+        "properties": [
+            {
+                "id": 1,
+                "property": "All Our refurbished Desktop systems tested before reach our customer"
+            },
+            {
+                "id": 2,
+                "property": "We can pack and ship your orders at your doorstep"
+            },
+            {
+                "id": 3,
+                "property": "We also assist you in setting up your devices to meet your exact needs"
+            }
+        ]
+    },
+    "quality_laptops": {
+        "title": "Quality Laptops at Wholesale Pricing",
+        "caption": "Purchase laptops in wholesale quantities and save money for your business.",
+        "properties": [
+            {
+                "id": 1,
+                "property": "We are the cheapest, safest and most efficient way to buy your Laptops"
+            },
+            {
+                "id": 2,
+                "property": "All units are tested ensuring only the best products reach our customers"
+            },
+            {
+                "id": 3,
+                "property": "We sell all of the most popular brands"
+            }
+        ]
+    },
+    "support_services": {
+        "title": "Perfect IT Onsite Support Services",
+        "caption": "Get On Site support from us and let's Mitech2u solve your co-operate IT issues. We are Providing quick help with:",
+        "properties": [
+            {
+                "id": 1,
+                "property": "Onsite Computers Laptops support"
+            },
+            {
+                "id": 2,
+                "property": "I,nternet Down/Network Problems"
+            },
+            {
+                "id": 3,
+                "property": "Software issues"
+            }
+        ]
+    },
+    "managed_services": {
+        "title": "Managed IT Services",
+        "caption": "Why you should considering outsource IT responsibilities to Mitech2u",
+        "properties": [
+            {
+                "id": 1,
+                "property": "Lowest cost with quality services"
+            },
+            {
+                "id": 2,
+                "property": "Increase Efficiency and Competitiveness"
+            },
+            {
+                "id": 3,
+                "property": "Quickly Implement New Technology"
+            }
+        ]
+    },
+    "data_recovery": {
+        "title": "Data Recovery",
+        "caption": "Hard Drive Crash? Data Loss? We can Help. We can recover data from the following devices: 1) Desktop Hard Disk Drive 2) Laptop Hard Disk Drive 3) External Hard Disk 4) Memory Card 5) USB Flash Drives",
+        "properties": [
+            {
+                "id": 1,
+                "property": "We “do not harm” – only using effective, non-destructive recovery techniques"
+            },
+            {
+                "id": 2,
+                "property": "We offer a price range so you only pay for the recovery techniques we can use on your data"
+            },
+            {
+                "id": 3,
+                "property": "We have a success rate of over 75% with many types of data loss"
+            },
+            {
+                "id": 4,
+                "property": "We offer fast turnaround, usually only a few days"
+            }
+        ]
+    }
+}

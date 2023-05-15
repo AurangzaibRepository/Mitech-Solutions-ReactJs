@@ -1,0 +1,27 @@
+{
+    "mission": "Our mission is to empower businesses with their technology by providing superior service, expertise and innovative products that satisfy the needs and exceed the expectations of our customers We have stayed true to our core values over the years and have created a company that our employees and clients are proud to associate with.",
+    "vision": "To build a better world with Information Technology and most trusted IT advisor and key partner to our clients that recognized by our clients for delivering excellence.",
+    "history": "We believe that the customer deserves the best possible service. We endeavor to bring you competitive prices backed by the best possible after sales service. Mitech2u was established in 2011 and as of 2016 have repaired and upgraded more than 1000's of computers.We offer full computer service and repair for low prices, different kind of products with reasonable price. We offer a wide range of services to home users and small to medium sized businesses. Our senior engineers have each been repairing computers for the best part of 10 years and with this wealth of experience to call upon you can rest assured that you, your' computer and your' data are in safe hands.",
+    "statistics": [
+        {
+            "id": 1,
+            "title": "Completed Projects",
+            "count": 89
+        },
+        {
+            "id": 2,
+            "title": "Web Development",
+            "count": 25
+        },
+        {
+            "id": 3,
+            "title": "IT Infrastructure",
+            "count": 20
+        },
+        {
+            "id": 4,
+            "title": "Programming",
+            "count": 14
+        }
+    ]
+}

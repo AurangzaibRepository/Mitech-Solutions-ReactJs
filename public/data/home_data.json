@@ -1,0 +1,159 @@
+{
+    "partner": {
+        "trusted_partner": {
+            "title": "Your Trusted Partner",
+            "description": "Mitech2u is one the most Trusted Source in Malaysia.Our main line of products are recycled, refurbished and new IT equipment such as laptops, desktops, LCD's, tabs, networking products and computer accessories etc. We are the cheapest, safest and most efficient way to buy your computers. We help you to get best deals on the market so you save 1000 over ringgits on your order"
+        },
+        "refurbished_partner": {
+            "title": "Your Reliable Refurbished Partner",
+            "description": "The largest range of refurbished laptop available at our warehouse. Variety of models Dell, HP, Lenovo , Acer adn so on."
+        }
+    },
+    "customer_statistics": [
+        {
+            "id": 1,
+            "statistics": 200,
+            "statistic_text": "Happy Clients"
+        },
+        {
+            "id": 2,
+            "statistics": 8,
+            "statistic_text": "Years in Business"
+        },
+        {
+            "id": 3,
+            "statistics": 108,
+            "statistic_text": "Completed projects"
+        },
+        {
+            "id": 4,
+            "statistics": 113,
+            "statistic_text": "Satisfied Customers"
+        }
+    ],
+    "packages": [
+        {
+            "id": 1,
+            "title": "Package A",
+            "price": 900,
+            "dvClass": "bg-color-primary text-white",
+            "buttonClass": "bg-color-gray text-black"
+        },
+        {
+            "id": 2,
+            "title": "Package B",
+            "price": 1200,
+            "dvClass": "bg-color-gray",
+            "buttonClass": ""
+        },
+        {
+            "id": 3,
+            "title": "Package C",
+            "price": 1600,
+            "dvClass": "bg-color-primary text-white",
+            "buttonClass": "bg-color-gray text-black"
+        }
+    ],
+    "app_development": {
+        "title": "All-In-One package",
+        "caption": "We offer end-to-end services to design, develop and promote your web project so you don’t have to deal with multiple companies. Take a look of our unrivaled service features",
+        "properties": [
+            {
+                "id": 1,
+                "property": "Website Development Services"
+            },
+            {
+                "id": 2,
+                "property": "Web Application Development"
+            },
+            {
+                "id": 3,
+                "property": "Android/IOS Development"
+            },
+            {
+                "id": 4,
+                "property": "Front & Backend Development"
+            },
+            {
+                "id": 5,
+                "property": "Admin Panel Development"
+            },
+            {
+                "id": 6,
+                "property": "Support & Maintenance"
+            }
+        ]
+    },
+    "portfolio": [
+        {
+            "id": 1,
+            "title": "M ITECH SOLUTION"
+        },
+        {
+            "id": 2,
+            "title": "MITECH4U ECommerce"
+        },
+        {
+            "id": 3,
+            "title": "LK Ayurveda"
+        },
+        {
+            "id": 4,
+            "title": "Smart Fire Group"
+        }
+    ],
+    "it_consulting": [
+        {
+            "id": 1,
+            "title": "Managed IT services",
+            "description": "Comprehensive support, monitoring and consulting in a simplified model."
+        },
+        {
+            "id": 2,
+            "title": "Server and Network Support",
+            "description": "We set up, manage and monitor your core IT infrastructure to keep you business running without interruption."
+        },
+        {
+            "id": 3,
+            "title": "Desktop and User Support",
+            "description": "An efficient, friendly helpdesk to support your users and maintain operation."
+        },
+        {
+            "id": 4,
+            "title": "Desktop and User Support",
+            "description": "Keep your workstation, servers and company data safe with enterprise-grade security and virus protection."
+        }
+    ],
+    "business": {
+        "customized_business": {
+            "title": "Customized Business IT",
+            "description": "We work with many types of IT customers with unique needs and very different budget levels. We craft an IT plan and budget for each customer to help them get the best value and strategically select their services and products.rt & Maintenance"
+        },
+        "user_support": {
+            "title": "Personal User Support",
+            "description": "We provide on-site expert, friendly technical support to business, home and home office users. Unlike repair shops, we have a strong emphasis on explanation, friendly communication, and training."
+        }
+    },
+    "disaster_recovery": {
+        "title": "Backup and Disaster Recovery",
+        "caption": "Backup is Crucial for Successful Business.Protect your business from catastrophic data and productivity loss with simple, powerful, automatic backups. Your company’s data is critical to business operations. Ensure you have a professional backup solution with redundancy, monitoring, support and recovery processes. We implement simple and redundant solutions to truly protect your data and offer you peace of mind.",
+        "properties": [
+            {
+                "id": 1,
+                "property": "CONTINUOUS, 24/7 BACKUP OF COMPANY DATA"
+            },
+            {
+                "id": 2,
+                "property": "IMAGE BACKUP WITH BARE-METAL RECOVERY"
+            },
+            {
+                "id": 3,
+                "property": "DISASTER RECOVERY SERVICE FOR MINIMAL DOWNTIME"
+            },
+            {
+                "id": 4,
+                "property": "BACKUP LAPTOPS ON THE GO"
+            }
+        ]
+    }
+}
