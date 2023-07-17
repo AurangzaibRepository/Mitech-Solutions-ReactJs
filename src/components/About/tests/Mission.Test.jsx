@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Mission from '../Mission';
@@ -8,4 +9,9 @@ const mockData = {
 };
 
 test('Test mission', () => {
+  render(<Mission mission={mockData.mission} vision={mockData.vision} />);
+
+  const element = screen.getByText(/Our mission is to/);
+
+  expect(element).toBeInTheDocument();
 });
