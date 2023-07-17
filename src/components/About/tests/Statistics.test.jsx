@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Statistics from '../Statistics';
@@ -14,3 +15,11 @@ const mockData = [
     count: 4,
   },
 ];
+
+test('Test statistics', () => {
+  render(<Statistics statistics={mockData} />);
+
+  const element = screen.getByText('Programming');
+
+  expect(element).toBeInTheDocument();
+});
