@@ -17,9 +17,13 @@ const mockData = [
 ];
 
 test('Test statistics', () => {
-  render(<Statistics statistics={mockData} />);
+  const { container } = render(<Statistics statistics={mockData} />);
 
   const element = screen.getByText('Programming');
 
   expect(element).toBeInTheDocument();
+
+  const itemList = container.getElementsByClassName('label-stats');
+
+  expect(itemList).toHaveLength(2);
 });
