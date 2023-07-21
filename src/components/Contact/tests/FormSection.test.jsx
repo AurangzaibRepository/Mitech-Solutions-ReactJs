@@ -9,4 +9,8 @@ test('Test form section', () => {
   const element = screen.getByText('Write a message');
 
   expect(element).toBeInTheDocument();
+
+  const anchor = screen.getAllByRole('link');
+
+  expect(anchor[0]).toHaveAttribute('href', 'https://www.facebook.com');
 });
