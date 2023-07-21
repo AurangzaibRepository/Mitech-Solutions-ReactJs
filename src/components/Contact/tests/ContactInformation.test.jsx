@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import ContactInformation from '../ContactInformation';
@@ -9,4 +10,15 @@ const mockData = {
 };
 
 test('test contact information', () => {
+  render(<ContactInformation
+    email={mockData.email}
+    phoneNumber={mockData.phone_number}
+    whatsAppNumber={mockData.whatsapp_number}
+  />);
+
+  let element = screen.getByText('mitech2u@gmail.com');
+  expect(element).toBeInTheDocument();
+
+  element = screen.getAllByText('+60122163731');
+  expect(element[0]).toBeInTheDocument();
 });
