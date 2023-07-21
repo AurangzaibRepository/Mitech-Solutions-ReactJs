@@ -9,4 +9,9 @@ test('Test customers', () => {
   const element = screen.getByText('Our Customers');
 
   expect(element).toBeInTheDocument();
+
+  const image = screen.getByRole('img');
+
+  expect(image).toHaveAttribute('alt', 'Customers');
+  expect(image).toHaveAttribute('src', 'customer-logos.png');
 });
