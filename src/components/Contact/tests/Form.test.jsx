@@ -1,12 +1,26 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import {
+  render,
+  screen,
+} from '@testing-library/react';
 import Form from '../Form';
 
-test('Test form', () => {
+it('Render fields', () => {
   render(<Form />);
+  expect(
+    screen.getByLabelText('Name:'),
+  ).toBeInTheDocument();
 
-  const element = screen.getByText('Name:');
+  expect(
+    screen.getByLabelText('Email:'),
+  ).toBeInTheDocument();
 
-  expect(element).toBeInTheDocument();
+  expect(
+    screen.getByLabelText('Subject:'),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByLabelText('Message:'),
+  ).toBeInTheDocument();
 });
