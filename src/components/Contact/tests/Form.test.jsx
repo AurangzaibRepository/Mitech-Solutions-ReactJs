@@ -6,7 +6,7 @@ import Form from '../Form';
 test('Test form', () => {
   render(<Form />);
 
-  const element = screen.getByText('Name');
+  const element = screen.getByText('Name:');
 
   expect(element).toBeInTheDocument();
 });
