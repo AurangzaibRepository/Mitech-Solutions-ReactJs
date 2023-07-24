@@ -24,13 +24,13 @@ function FormSection() {
           <br />
           <div className="form-section-icon-div">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFacebook} />
+              <FontAwesomeIcon icon={faFacebook} title="Facebook icon" />
             </a>
             <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGooglePlus} />
+              <FontAwesomeIcon icon={faGooglePlus} title="Googleplus icon" />
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faTwitter} title="Twitter icon" />
             </a>
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
