@@ -20,17 +20,15 @@ function Form() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      data-testid="form"
-    >
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div className="row" id="dv-form">
         <div className="col-md-4">
           { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
-          <label>Name:</label>
+          <label htmlFor="name">Name:</label>
           <input
             /* eslint-disable react/jsx-props-no-spreading */
             {...register('name')}
+            id="name"
             type="text"
             className="form-control"
           />
@@ -38,9 +36,10 @@ function Form() {
         </div>
         <div className="col-md-4">
           { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
-          <label>Email:</label>
+          <label htmlFor="email">Email:</label>
           <input
             {...register('email')}
+            id="email"
             type="text"
             className="form-control"
           />
@@ -48,9 +47,10 @@ function Form() {
         </div>
         <div className="col-md-4">
           { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
-          <label>Subject:</label>
+          <label htmlFor="subject">Subject:</label>
           <input
             {...register('subject')}
+            id="subject"
             type="text"
             className="form-control"
           />
@@ -58,9 +58,10 @@ function Form() {
         </div>
         <div className="col-md-12 mt-4">
           { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
-          <label>Message:</label>
+          <label htmlFor="message">Message:</label>
           <textarea
             {...register('message')}
+            id="message"
             className="form-control"
           />
           <span className="spn-error">{errors.message?.message}</span>
