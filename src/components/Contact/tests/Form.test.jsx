@@ -3,6 +3,7 @@ import React from 'react';
 import {
   render,
   screen,
+  fireEvent,
 } from '@testing-library/react';
 import Form from '../Form';
 
@@ -23,4 +24,12 @@ it('Render fields', () => {
   expect(
     screen.getByLabelText('Message:'),
   ).toBeInTheDocument();
+});
+
+it('Submit failure', async () => {
+  const { container } = render(<Form />);
+  const spans = await container.getElementsByClassName('spn-error');
+
+  fireEvent.submit(screen.getByRole('button'));
+  expect(spans.length).toBe(4);
 });
