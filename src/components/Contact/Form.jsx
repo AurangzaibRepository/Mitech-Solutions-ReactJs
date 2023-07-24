@@ -20,7 +20,10 @@ function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      data-testid="form"
+    >
       <div className="row" id="dv-form">
         <div className="col-md-4">
           { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
