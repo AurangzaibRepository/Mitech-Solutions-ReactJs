@@ -8,7 +8,11 @@ const mockData = "We believe that the customer deserves the best possible servic
 test('Test company history', () => {
   render(<CompanyHistory history={mockData} />);
 
-  const element = screen.getByText('We believe that', {exact: false});
+  expect(
+    screen.getByText('Our Company History'),
+  ).toBeInTheDocument();
 
-  expect(element).toBeInTheDocument();
+  expect(
+    screen.getByText('We believe that', { exact: false }),
+  ).toBeInTheDocumen();
 });
