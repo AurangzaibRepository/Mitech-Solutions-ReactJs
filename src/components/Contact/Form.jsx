@@ -54,7 +54,6 @@ function Form() {
             type="text"
             className="form-control"
           />
-          <span className="spn-error">{errors.subject?.message}</span>
           {errors.subject && <span className="spn-error">{errors.subject.message}</span>}
         </div>
         <div className="col-md-12 mt-4">
