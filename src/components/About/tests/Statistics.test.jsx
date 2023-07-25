@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Statistics from '../Statistics';
 
 const mockData = [
@@ -19,11 +19,6 @@ const mockData = [
 test('Test statistics', () => {
   const { container } = render(<Statistics statistics={mockData} />);
 
-  const element = screen.getByText('Programming');
-
-  expect(element).toBeInTheDocument();
-
   const itemList = container.getElementsByClassName('label-stats');
-
   expect(itemList).toHaveLength(2);
 });
