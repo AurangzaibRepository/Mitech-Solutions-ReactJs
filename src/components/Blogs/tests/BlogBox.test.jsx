@@ -27,4 +27,8 @@ test('Test blog box', () => {
   expect(
     screen.getByRole('button'),
   ).toBeInTheDocument();
+
+  const image = screen.getByRole('img');
+  expect(image).toHaveAttribute('src', 'blog1.jpg');
+  expect(image).toHaveAttribute('alt', 'Blog');
 });
