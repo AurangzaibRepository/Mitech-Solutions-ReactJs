@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-undef */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
@@ -11,7 +12,19 @@ const mockData = {
 test('Test mission', () => {
   render(<Mission mission={mockData.mission} vision={mockData.vision} />);
 
-  const element = screen.getByText(/Our mission is to/);
+  expect(
+    screen.getByText('Our Mission'),
+  ).toBeInTheDocument();
 
-  expect(element).toBeInTheDocument();
+  expect(
+    screen.getByText('Our Vision'),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByText(/Our mission is to/),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByText(/To build a better world/),
+  ).toBeInTheDocument();
 });
