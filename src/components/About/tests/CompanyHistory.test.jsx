@@ -14,7 +14,7 @@ test('Test company history', () => {
 
   expect(
     screen.getByText('We believe that', { exact: false }),
-  ).toBeInTheDocumen();
+  ).toBeInTheDocument();
 
   const image = screen.getByRole('img');
   expect(image).toHaveAttribute('src', 'company-history.png');
