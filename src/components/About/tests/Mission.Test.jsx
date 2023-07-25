@@ -27,4 +27,8 @@ test('Test mission', () => {
   expect(
     screen.getByText(/To build a better world/),
   ).toBeInTheDocument();
+
+  const image = screen.getByRole('img');
+  expect(image).toHaveAttribute('src', 'vision.png');
+  expect(image).toHaveAttribute('alt', 'Vision');
 });
