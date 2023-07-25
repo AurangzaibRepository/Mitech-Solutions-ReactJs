@@ -6,11 +6,29 @@ import FormSection from '../FormSection';
 test('Test form section', () => {
   render(<FormSection />);
 
-  let element = screen.getByText('Write a message');
-  expect(element).toBeInTheDocument();
+  expect(
+    screen.getByText('Write a message'),
+  ).toBeInTheDocument();
 
-  element = screen.getByTitle('Facebook icon');
-  expect(element).toBeInTheDocument();
+  expect(
+    screen.getByText('If you got any questions, please do not hesitate to send us a message. We reply within 24 hours !'),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByText('Our profiles in social media:'),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByTitle('Facebook icon'),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByTitle('Googleplus icon'),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByTitle('Twitter icon'),
+  ).toBeInTheDocument();
 
   const anchor = screen.getAllByRole('link');
   expect(anchor[0]).toHaveAttribute('href', 'https://www.facebook.com');
