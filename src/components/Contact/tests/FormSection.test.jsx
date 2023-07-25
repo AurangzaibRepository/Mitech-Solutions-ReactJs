@@ -32,4 +32,6 @@ test('Test form section', () => {
 
   const anchor = screen.getAllByRole('link');
   expect(anchor[0]).toHaveAttribute('href', 'https://www.facebook.com');
+  expect(anchor[1]).toHaveAttribute('href', 'https://www.google.com');
+  expect(anchor[2]).toHaveAttribute('href', 'https://www.twitter.com');
 });
