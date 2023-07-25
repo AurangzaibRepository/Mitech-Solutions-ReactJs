@@ -16,9 +16,19 @@ test('test contact information', () => {
     whatsAppNumber={mockData.whatsapp_number}
   />);
 
-  let element = screen.getByText('mitech2u@gmail.com');
-  expect(element).toBeInTheDocument();
+  expect(
+    screen.getByText('Call us'),
+  ).toBeInTheDocument();
 
-  element = screen.getAllByText('+60122163731');
-  expect(element[0]).toBeInTheDocument();
+  expect(
+    screen.getByText('Whatsapp us'),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByText('mitech2u@gmail.com'),
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getAllByText('+60122163731'),
+  ).toBeInTheDocument();
 });
