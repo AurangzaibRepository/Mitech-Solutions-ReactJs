@@ -32,7 +32,7 @@ function Form() {
             type="text"
             className="form-control"
           />
-          <span className="spn-error">{errors.name?.message}</span>
+          {errors.name && <span className="spn-error">{errors.name.message}</span>}
         </div>
         <div className="col-md-4">
           { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
@@ -43,7 +43,7 @@ function Form() {
             type="text"
             className="form-control"
           />
-          <span className="spn-error">{errors.email?.message}</span>
+          {errors.email && <span className="spn-error">{errors.email.message}</span>}
         </div>
         <div className="col-md-4">
           { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
@@ -55,6 +55,7 @@ function Form() {
             className="form-control"
           />
           <span className="spn-error">{errors.subject?.message}</span>
+          {errors.subject && <span className="spn-error">{errors.subject.message}</span>}
         </div>
         <div className="col-md-12 mt-4">
           { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
@@ -64,7 +65,7 @@ function Form() {
             id="message"
             className="form-control"
           />
-          <span className="spn-error">{errors.message?.message}</span>
+          {errors.message && <span className="spn-error">{errors.message.message}</span>}
         </div>
         <div className="col-md-12 mt-3 d-flex justify-content-end">
           <input type="submit" className="btn btn-primary" value="Send" />
