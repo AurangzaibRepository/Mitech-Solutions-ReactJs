@@ -22,6 +22,10 @@ test('Test core services', () => {
   render(<CoreServices data={mockData} />);
 
   expect(
+    screen.getByText('Our Core Services'),
+  ).toBeInTheDocument();
+
+  expect(
     screen.getByText('Refurbished Desktops'),
   ).toBeInTheDocument();
 
