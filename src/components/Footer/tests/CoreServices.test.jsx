@@ -3,7 +3,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import CoreServices from '../CoreServices';
 
-const MockData = [
+const mockData = [
   {
     id: 1,
     property: 'Refurbished Desktops',
@@ -15,4 +15,5 @@ const MockData = [
 ];
 
 test('Test core services', () => {
+  render(<CoreServices data={mockData} />);
 });
