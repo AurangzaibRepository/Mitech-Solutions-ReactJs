@@ -24,3 +24,7 @@ const mockData = [
     property: 'SEO',
   },
 ];
+
+test('Test professional services', () => {
+  render(<ProfessionalServices data={mockData} />);
+});
