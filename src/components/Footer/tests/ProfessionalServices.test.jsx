@@ -29,6 +29,10 @@ const mockData = [
 test('Test professional services', () => {
   render(<ProfessionalServices data={mockData} />);
 
+  expect(
+    screen.getByText('Professional Services'),
+  ).toBeInTheDocument();
+
   const list = screen.getByRole('list', {
     name: 'service-list',
   });
