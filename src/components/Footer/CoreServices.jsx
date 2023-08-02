@@ -6,7 +6,7 @@ function CoreServices({ data }) {
     <>
       { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
       <label className="footer-header">Our Core Services</label>
-      <ul className="footer-contents" aria-labelledby="service-list">
+      <ul className="footer-contents" aria-label="service-list">
         {data.map((item) => (
           <li key={item.id}>{item.property}</li>
         ))}

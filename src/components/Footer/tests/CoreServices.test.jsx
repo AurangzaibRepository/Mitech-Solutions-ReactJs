@@ -1,6 +1,10 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import {
+  render,
+  screen,
+  within,
+} from '@testing-library/react';
 import CoreServices from '../CoreServices';
 
 const mockData = [
@@ -24,4 +28,12 @@ test('Test core services', () => {
   expect(
     screen.getByText('Refurbished Laptops'),
   ).toBeInTheDocument();
+
+  const list = screen.getByRole('list', {
+    name: 'service-list',
+  });
+
+  const { getAllByRole } = within(list);
+  const items = getAllByRole('listitem');
+  expect(items.length).toBe(2);
 });
