@@ -24,3 +24,7 @@ const mockData = [
     property: 'Sales & Marketing Software',
   },
 ];
+
+test('Test softwares', () => {
+  render(<Softwares data={mockData} />);
+});
