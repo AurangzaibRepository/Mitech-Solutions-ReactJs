@@ -6,7 +6,7 @@ function Softwares({ data }) {
     <>
       { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }
       <label className="footer-header">Our Softwares</label>
-      <ul className="footer-contents">
+      <ul className="footer-contents" aria-label="software-list">
         {data.map((item) => (
           <li key={item.id}>{item.property}</li>
         ))}
