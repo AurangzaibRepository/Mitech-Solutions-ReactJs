@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import {
   render,
@@ -27,4 +28,12 @@ const mockData = [
 
 test('Test professional services', () => {
   render(<ProfessionalServices data={mockData} />);
+
+  const list = screen.getByRole('list', {
+    name: 'service-list',
+  });
+
+  const { getAllByRole } = within(list);
+  const listItems = getAllByRole('listitem');
+  expect(listItems.length).toBe(4);
 });
