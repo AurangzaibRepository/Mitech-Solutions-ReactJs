@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Partners from '../Partners';
@@ -12,3 +13,14 @@ const mockData = {
     description: 'The largest range of refurbished laptop available at our warehouse. Variety of models Dell, HP, Lenovo , Acer adn so on.',
   },
 };
+
+test('Test partners', () => {
+  render(<Partners
+    trustedPartner={mockData.trusted_partner}
+    refurbishedPartner={mockData.refurbished_partner}
+  />);
+
+  expect(
+    screen.getByText(/Need assistance/i),
+  ).toBeInTheDocument();
+});
