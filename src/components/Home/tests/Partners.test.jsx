@@ -15,7 +15,7 @@ const mockData = {
 };
 
 test('Test partners', () => {
-  render(<Partners
+  const { container } = render(<Partners
     trustedPartner={mockData.trusted_partner}
     refurbishedPartner={mockData.refurbished_partner}
   />);
@@ -23,4 +23,16 @@ test('Test partners', () => {
   expect(
     screen.getByText(/Need assistance/i),
   ).toBeInTheDocument();
+
+  const headerElements = container.getElementsByClassName('page-header');
+  expect(headerElements).toHaveLength(2);
+
+  const contentElements = container.getElementsByClassName('page-contents');
+  expect(contentElements).toHaveLength(2);
+
+  const buttons = screen.getAllByRole('button');
+  expect(buttons).toHaveLength(2);
+
+  const images = screen.getAllByRole('img');
+  expect(images).toHaveLength(2);
 });
