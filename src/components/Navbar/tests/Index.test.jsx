@@ -9,6 +9,10 @@ test('Test Navbar', () => {
   render(<BrowserRouter><Navbar /></BrowserRouter>);
 
   expect(
+    screen.getByText('MiTech Solutions'),
+  ).toBeInTheDocument();
+
+  expect(
     screen.getByRole('link', { name: 'Services' }),
   ).toHaveAttribute('href', '/services');
 
