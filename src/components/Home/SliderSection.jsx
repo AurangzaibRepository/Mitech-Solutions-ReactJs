@@ -16,13 +16,13 @@ function SliderSection() {
         autoPlay
       >
         <div>
-          <img src={imgA} alt="" />
+          <img src={imgA} alt="Product" />
         </div>
         <div>
-          <img src={imgB} alt="" />
+          <img src={imgB} alt="Product" />
         </div>
         <div>
-          <img src={imgC} alt="" />
+          <img src={imgC} alt="Product" />
         </div>
       </Carousel>
     </div>
