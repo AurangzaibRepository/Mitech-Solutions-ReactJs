@@ -2,20 +2,29 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from '..';
 
 test('Test Navbar', () => {
   render(<BrowserRouter><Navbar /></BrowserRouter>);
 
-  userEvent.click(screen.getByText('Services'));
+  expect(
+    screen.getByRole('link', { name: 'Services' }),
+  ).toHaveAttribute('href', '/services');
 
   expect(
-    screen.getByText('MiTech Solutions'),
-  ).toBeInTheDocument();
+    screen.getByRole('link', { name: 'Portfolio' }),
+  ).toHaveAttribute('href', '/portfolio');
 
   expect(
-    screen.getByText('Services'),
-  ).toBeInTheDocument();
+    screen.getByRole('link', { name: 'Blogs' }),
+  ).toHaveAttribute('href', '/blogs');
+
+  expect(
+    screen.getByRole('link', { name: 'About us' }),
+  ).toHaveAttribute('href', '/about');
+
+  expect(
+    screen.getByRole('link', { name: 'Contact us' }),
+  ).toHaveAttribute('href', '/contact');
 });
